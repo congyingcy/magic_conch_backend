@@ -54,7 +54,7 @@ public class Result implements Serializable {
     public static Result error() {
         Result result = new Result();
         result.setResultCode(ResultCode.ERROR);
-        result.setMsg("失败");
+        result.setMsg("系统异常");
         return result;
     }
 
@@ -68,7 +68,7 @@ public class Result implements Serializable {
     public static Result error(ResultCode resultCode) {
         Result result = new Result();
         result.setResultCode(resultCode);
-        result.setMsg("失败");
+        result.setMsg("系统异常");
         return result;
     }
 
